@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "number_of_shards": 10,
+    "number_of_replicas": 1
+  },
+   "mappings": {
+    "properties": {
+      "user": {
+        "type": "keyword"
+      },
+      "creationDate": {
+        "type": "date"
+      },
+      "title": {
+        "type": "text"
+      },
+      "title_vector": {
+        "type": "dense_vector",
+        "dims": 512
+      },
+      "questionId": {
+        "type": "keyword"
+      },
+      "answerId": {
+        "type": "keyword"
+      },
+      "acceptedAnswerId": {
+        "type": "keyword"
+      },
+      "tags": {
+        "type": "keyword"
+      },
+      "body": {
+        "type": "text"
+      },
+      "type": {
+        "type": "keyword"
+      }
+    }
+  }
+}
